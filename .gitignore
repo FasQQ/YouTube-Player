@@ -1,0 +1,27 @@
+# Zaleznosci - pobierane przez npm install, nie powinny trafiac do repo
+node_modules/
+
+# Wyniki budowania (instalatory .exe itd.) - te trafiaja na GitHub Releases,
+# nie do samego repozytorium
+dist/
+out/
+
+# Sekrety / zmienne srodowiskowe - NIGDY nie commituj tokenow
+.env
+.env.local
+.env.*.local
+
+# Pliki systemowe
+.DS_Store
+Thumbs.db
+
+# Logi
+*.log
+npm-debug.log*
+
+# Pliki edytora
+.vscode/
+.idea/
+
+# Dokumentacja deweloperska - tylko lokalnie, nie trafia na GitHub ani do .exe
+DEVELOPMENT.md
